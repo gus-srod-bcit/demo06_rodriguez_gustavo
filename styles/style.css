@@ -1,1 +1,76 @@
+/*
+* --------------------------------------------
+* Custom styles to override the default Bootstrap ones
+* --------------------------------------------
+*
+*   https://coolors.co/12492f-0a2f35-f56038-ff5577-ffffff-0fcaf0 <-- Palette
+*/
+:root
+{
+    --lightest: #FFF;
+    --primary: #0A2F35;
+    --secondary: #F56038;
+    --accent: #FF5577;
+    --highlights: #12492F;
+    --blue: #0FCAF0;
 
+}
+
+.bg-info
+{
+    background-color: var(--secondary);
+}
+
+.navbar, .navbarlight, .navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link
+{
+    color: var(--primary);
+}
+
+.btn-info
+{
+    color: var(--lightest);
+    background-color: var(--secondary);
+    border-color: var(--primary);
+}
+
+.btn-primary
+{
+    color: var(--lightest);
+    font-size: 150%;
+    background-color: var(--primary);
+    border-color: var(--accent);
+    border-width: thick;
+}
+
+body
+{
+    background-color: var(--lightest);
+}
+
+.navbar-brand
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*change the font name for what you have*/
+    font-size: 2.25rem;
+}
+
+.btn-outline-primary
+{
+    color: var(--primary);
+    border-color: var(--secondary);
+}
+
+/* Style for radio button labels on hover or focus */
+.btn-outline-primary:hover, .btn-outline-primary:focus
+{
+    color: var(--lightest);
+    background-color: var(--secondary);
+    border-color: var(--primary);
+}
+
+/* Style for the active (checked) radio button label */
+.btn-check:checked + .btn-outline-primary, .btn-check:active + .btn-outline-primary
+{
+    color: var(--lightest);
+    background-color: var(--primary);
+    border-color: var(--highlights);
+}
